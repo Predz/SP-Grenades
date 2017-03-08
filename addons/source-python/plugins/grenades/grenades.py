@@ -1,32 +1,16 @@
 ## IMPORTS
 
 from engines.precache import Model
+from stringtables.downloads import Downloadables
 from vmchanger import viewmodel_manager, worldmodel_manager
 
 ## GLOBALS
 
-Model('models/weapons/futuristicgrenades/v_eq_decoy.dx90.vtx',
-	download=True)
-Model('models/weapons/futuristicgrenades/v_eq_decoy.dx80.vtx',
-	download=True)
-decoy_view_model = Model('models/weapons/futuristicgrenades/v_eq_decoy.mdl',
-	download=True)
-Model('models/weapons/futuristicgrenades/v_eq_decoy.vvd',
-	download=True)
-Model('models/weapons/futuristicgrenades/v_eq_decoy.sw.vtx',
-	download=True)
-Model('models/weapons/futuristicgrenades/w_eq_decoy.dx90.vtx',
-	download=True)
-Model('models/weapons/futuristicgrenades/w_eq_decoy.dx80.vtx',
-	download=True)
-decoy_world_model = Model('models/weapons/futuristicgrenades/w_eq_decoy.mdl',
-	download=True)
-Model('models/weapons/futuristicgrenades/w_eq_decoy.phys',
-	download=True)
-Model('models/weapons/futuristicgrenades/w_eq_decoy.vvd',
-	download=True)
-Model('models/weapons/futuristicgrenades/w_eq_decoy.sw.vtx',
-	download=True)
+downloadables = Downloadables()
+downloadables.add_directory('models/weapons/futuristicgrenades')
+
+decoy_view_model = Model('models/weapons/futuristicgrenades/v_eq_decoy.mdl')
+decoy_world_model = Model('models/weapons/futuristicgrenades/w_eq_decoy.mdl')
 
 ##
 
